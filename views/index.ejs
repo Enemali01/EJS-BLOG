@@ -1,0 +1,33 @@
+<div class="author">
+  <h1 class="author_heading"> Hi, I am Simon.</h1>
+  <p class="author_body">Web Developer and Content Creator</p>
+</div>
+
+<img src="../../images/london2.jpg" alt="person taking a photo" class="hero-image" width="1000" height="400">
+
+<section class="articles">
+  <h2 class="articles_heading">Latest Posts</h2>
+  <ul class="articles_ul">
+    <% data.forEach(post => { %>
+     
+    
+    <li>
+      <a href="/post/<%= post._id %>">
+        <span><%= post.title %></span>
+        <span class="articles_list_date"><%= post.createdAt.toDateString() %></span>
+      </a>
+    </li>
+    <% }) %>
+  </ul>
+
+
+   <a href="#" class="pagination"> &lt; View Older Posts</a>
+   
+ 
+ 
+
+
+   
+
+  
+</section>
